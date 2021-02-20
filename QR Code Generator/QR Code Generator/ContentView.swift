@@ -13,7 +13,7 @@ struct ContentView: View {
   @State private var qrCode: QRCode?
 
   private let qrCodeGenerator = QRCodeGenerator()
-  @ObservedObject private var imageSaver = ImageSaver()
+  @StateObject private var imageSaver = ImageSaver()
 
   var body: some View {
     NavigationView {
