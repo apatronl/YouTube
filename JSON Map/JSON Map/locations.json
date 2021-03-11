@@ -1,0 +1,40 @@
+{
+  "locations": [
+    {
+      "id": 0,
+      "name": "New York City",
+      "latitude": 40.71,
+      "longitude": -74
+    },
+    {
+      "id": 1,
+      "name": "Barcelona",
+      "latitude": 41.38,
+      "longitude": 2.17
+    },
+    {
+      "id": 2,
+      "name": "Tokyo",
+      "latitude": 35.68,
+      "longitude": 139.76
+    },
+    {
+      "id": 3,
+      "name": "Atlanta",
+      "latitude": 33.74,
+      "longitude": -84.38
+    },
+    {
+      "id": 4,
+      "name": "Paris",
+      "latitude": 48.85,
+      "longitude": 2.35
+    },
+    {
+      "id": 5,
+      "name": "Hong Kong",
+      "latitude": 22.31,
+      "longitude": 114.16
+    }
+  ]
+}
