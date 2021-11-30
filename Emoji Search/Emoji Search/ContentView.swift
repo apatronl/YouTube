@@ -10,9 +10,10 @@ struct ContentView: View {
   @State private var searchText: String = ""
 
   private var searchResults: [EmojiDetails] {
-    if searchText.isEmpty { return EmojiProvider.all() }
-    return EmojiProvider.all().filter {
-      $0.name.contains(searchText) || $0.emoji.contains(searchText)
+    let results = EmojiProvider.all()
+    if searchText.isEmpty { return results }
+    return results.filter {
+      $0.name.lowercased().contains(searchText.lowercased()) || $0.emoji.contains(searchText)
     }
   }
 
