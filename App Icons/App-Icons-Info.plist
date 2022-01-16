@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIcons</key>
+	<dict>
+    <key>CFBundlePrimaryIcon</key>
+    <dict>
+      <key>CFBundleIconFiles</key>
+      <array>
+        <string>Robot</string>
+      </array>
+      <key>UIPrerenderedIcon</key>
+      <false/>
+    </dict>
+
+    <key>CFBundleAlternateIcons</key>
+    <dict>
+      <key>Lollipop</key>
+      <dict>
+        <key>CFBundleIconFiles</key>
+        <array>
+          <string>Lollipop</string>
+        </array>
+        <key>UIPrerenderedIcon</key>
+        <false/>
+      </dict>
+
+      <key>Tennis Ball</key>
+      <dict>
+        <key>CFBundleIconFiles</key>
+        <array>
+          <string>Tennis</string>
+        </array>
+        <key>UIPrerenderedIcon</key>
+        <false/>
+      </dict>
+    </dict>
+	</dict>
+</dict>
+</plist>
