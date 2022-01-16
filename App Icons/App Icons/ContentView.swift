@@ -66,6 +66,8 @@ struct IconRow: View {
   var body: some View {
     HStack(alignment: .center) {
       Image(uiImage: icon.image ?? UIImage())
+        .resizable()
+        .frame(width: 60, height: 60)
         .cornerRadius(10)
         .padding(.trailing)
       Text(icon.displayName)
