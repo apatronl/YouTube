@@ -44,6 +44,11 @@ struct IconsListView: View {
       }
       .pickerStyle(.inline)
       .onChange(of: appSettings.iconIndex) { newIndex in
+        guard UIApplication.shared.supportsAlternateIcons else {
+          print("App does not support alternate icons")
+          return
+        }
+
         let currentIndex = appSettings.icons.firstIndex(where: { icon in
           return icon.iconName == appSettings.currentIconName
         }) ?? 0
