@@ -2,14 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>CFBundleIcons</key>
-	<dict>
+  <key>CFBundleIcons</key>
+  <dict>
     <key>CFBundlePrimaryIcon</key>
     <dict>
       <key>CFBundleIconFiles</key>
       <array>
         <string>Robot</string>
       </array>
+      <key>CFBundleIconName</key>
+      <string>Default</string>
       <key>UIPrerenderedIcon</key>
       <false/>
     </dict>
@@ -36,6 +38,6 @@
         <false/>
       </dict>
     </dict>
-	</dict>
+  </dict>
 </dict>
 </plist>
