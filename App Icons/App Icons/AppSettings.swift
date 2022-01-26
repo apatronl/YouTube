@@ -25,10 +25,11 @@ public final class AppSettings: ObservableObject {
       // Default Icon
       if let primaryIcon = bundleIcons["CFBundlePrimaryIcon"] as? [String: Any],
          let iconFileName = (primaryIcon["CFBundleIconFiles"] as? [String])?.first {
+        let displayName = (primaryIcon["CFBundleIconName"] as? String) ?? ""
         // To reset to the default icon, we call setAlternateIconName with nil, so we create an
         // icon object with nil as its icon name
         icons.append(
-          Icon(displayName: "Default", iconName: nil, image: UIImage(named: iconFileName))
+          Icon(displayName: displayName, iconName: nil, image: UIImage(named: iconFileName))
         )
       }
 
