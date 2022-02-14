@@ -16,9 +16,6 @@ struct ContentView: View {
         .font(.largeTitle)
         .bold()
         .padding()
-        .task {
-          await viewModel.start()
-        }
       Spacer()
       HStack {
         Spacer()
@@ -30,6 +27,8 @@ struct ContentView: View {
         })
         .padding()
       }
+    }.task {
+      await viewModel.start()
     }
   }
 }
