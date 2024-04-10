@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ChatView.swift
 //  Chat
 //
 //  Created by Ale Patrón on 4/3/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ChatView: View {
 
     @StateObject private var viewModel: ChatViewModel = ChatViewModel()
 
@@ -30,5 +30,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ChatView()
 }
