@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChatMessagesList: View {
 
-    @ObservedObject var viewModel: ChatViewModel
+    @Bindable var viewModel: ChatViewModel
 
     var body: some View {
         ScrollView {

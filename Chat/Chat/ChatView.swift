@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ChatView: View {
 
-    @StateObject private var viewModel: ChatViewModel = ChatViewModel()
+    @Bindable private var viewModel: ChatViewModel = ChatViewModel()
 
     var body: some View {
         NavigationStack {

@@ -6,11 +6,13 @@
 //
 
 import Foundation
+import Observation
 
-class ChatViewModel: ObservableObject {
-    @Published var draftMessage: String = ""
+@Observable
+class ChatViewModel {
+    var draftMessage: String = ""
 
-    @Published private(set) var messages: [Message] = [
+    private(set) var messages: [Message] = [
         Message(
             role: .receiver,
             text: "Here's to the crazy ones"
@@ -49,7 +51,7 @@ class ChatViewModel: ObservableObject {
         ),
     ]
 
-    @Published var scrollPosition: UUID? = nil
+    var scrollPosition: UUID? = nil
 
     func sendMessage() {
         guard canSendMessage else { return }
