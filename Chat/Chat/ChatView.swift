@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 struct ChatView: View {
 
     @Bindable private var viewModel: ChatViewModel = ChatViewModel()
