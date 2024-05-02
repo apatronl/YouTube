@@ -28,6 +28,7 @@ class ChatViewModel {
         draftMessage.removeAll()
 
         // Send message to Gemini
+        error = nil
         waitingForResponse = true
         let result = await client.send(message: latestMessage.text)
         waitingForResponse = false
